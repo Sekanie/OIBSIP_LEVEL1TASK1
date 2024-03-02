@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartheid Museum</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .apartheid {
+            text-align: center;
+            padding: 20px;
+        }
+
+            .apartheid .column {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px; 
+            }
+
+                .apartheid .column .image {
+                    height: 200px; 
+                }
+
+                    .apartheid .column .image img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover; 
+                        display: block;
+                    }
+
+                .apartheid .column .content {
+                    flex: 1 1 50%;
+                    padding: 0 20px;
+                }
+
+                    .apartheid .column .content h3 {
+                        font-size: 30px;
+                        color: black;
+                    }
+
+                    .apartheid .column .content p {
+                        font-size: 20px;
+                        color: black;
+                        padding: 10px 0;
+                    }
+
+        .heading {
+            text-align: center;
+            color: black;
+            font-size: 40px;
+            text-transform: uppercase;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section class="apartheid" id="apartheid">
+        <h2 class="heading">apartheid museum</h2>
+        <div class="column">
+            <div class="image" style="grid-row: 1; grid-column: 1;">
+                <img src="images/a1.jpg" alt="">
+            </div>
+
+            <div class="image" style="grid-row: 1; grid-column: 2;">
+                <img src="images/a5.jpg" alt="">
+            </div>
+
+            <div class="image" style="grid-row: 2; grid-column: 1;">
+                <img src="images/a3.jpg" alt="">
+            </div>
+
+            <div class="image" style="grid-row: 2; grid-column: 2;">
+                <img src="images/a4.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Apartheid Museum: Where history speaks, emotions echo, and the journey towards justice unfolds</h3>
+                <p>
+                    The Apartheid Museum, the first of its kind, illustrates the rise and fall of apartheid.
+
+                    An architectural consortium, comprising several leading architectural firms, conceptualised the design of the building on a seven-hectare stand. The museum is a superb example of design, space and landscape offering the international community a unique South African experience.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

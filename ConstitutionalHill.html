@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constitutional Hill</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .constitutional {
+            text-align: center;
+            padding: 20px;
+        }
+
+            .constitutional .column {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+            }
+
+                .constitutional .column .image {
+                    height: 200px;
+                }
+
+                    .constitutional .column .image img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                    }
+
+                .constitutional .column .content {
+                    flex: 1 1 50%;
+                    padding: 0 20px;
+                }
+
+                    .constitutional .column .content h3 {
+                        font-size: 30px;
+                        color: black;
+                    }
+
+                    .constitutional .column .content p {
+                        font-size: 20px;
+                        color: black;
+                        padding: 10px 0;
+                    }
+
+        .heading {
+            text-align: center;
+            color: black;
+            font-size: 40px;
+            text-transform: uppercase;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section class="constitutional" id="constitutional">
+        <h2 class="heading">Constitutional Hill</h2>
+        <div class="column">
+            <div class="image" style="grid-row: 1; grid-column: 1;">
+                <img src="images/C1.jpg" alt="">
+            </div>
+
+            <div class="image" style="grid-row: 1; grid-column: 2;">
+                <img src="images/C2.jpg" alt="">
+            </div>
+
+            <div class="image" style="grid-row: 2; grid-column: 1;">
+                <img src="images/C3.jpg" alt="">
+            </div>
+
+            <div class="image" style="grid-row: 2; grid-column: 2;">
+                <img src="images/C4.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Constitutional Hill: A captivating blend of history and education.</h3>
+                <p>The Constitution Hill precinct is located at 11 Kotze Street in Braamfontein, Johannesburg near the western end of the suburb of Hillbrow. Constitution Hill is the seat of the Constitutional Court of South Africa.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

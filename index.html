@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>index page </title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--I am adding the style tag in here because the activities section doesn't want to apply the styles when they are in the styles in the .css'-->
+    <style>
+        .heading {
+            text-align: center;
+            color: burlywood;
+            font-size: 40px;
+            text-transform: uppercase;
+            padding: 5px;
+        }
+
+        .activities .box-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .activities .box-container .box {
+            flex: 0 0 calc(33.33% - 10px);
+            background: white;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 10px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .activities .box-container .box img {
+            height: 100px;
+
+        }
+
+        .activities .box-container .box h3 {
+            font-size: 20px;
+            padding-top: 1rem;
+        }
+
+        /*footer*/
+        .footer {
+            height: 26vh;
+            margin: 0 1rem;
+        }
+
+        .footer p {
+            text-align: center;
+        }
+
+        nav, .nav-links {
+            display: flex;
+        }
+
+        nav {
+            justify-content: space-around;
+            align-items: center;
+            height: 17vh;
+        }
+
+        .nav-links {
+            gap: 2rem;
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        /*icon-styling*/
+        .details-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem;
+        }
+
+        .icon {
+            margin-right: 5px;
+            cursor: pointer;
+            height: 2rem;
+        }
+
+        .details-container p {
+            margin-bottom: 20px;
+        }
+
+        .details-container1 {
+            display: flex;
+            justify-content: center;
+            border-radius: 2rem;
+            border: rgb(53,53,53) 0.1rem solid;
+            border-color: saddlebrown;
+            margin: 2rem auto;
+            padding: 0.5rem;
+        }
+        
+    </style>
+</head>
+
+
+<body>
+    <!--Header section start-->
+    <header class="header">
+
+        <div class="wrapper">
+            <div class="logo">
+                <img src="images/image1.jpg" alt="" />
+            </div>
+            <!--These here are the tabs on the home page-->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="welcome-text">
+            <h1>Discover Thrilling Experiences in the Heart of Joburg</h1>
+        </div>
+    </header>
+    <!--Header sections ends-->
+
+    <!--Activities section starts-->
+    <section class="activities" id="activities">
+
+        <h1 class="heading">Activities</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="images/image10.jpg" alt="">
+                <h3> Maboneng Precinct</h3>
+                <p1>Maboneng Precinct is known for its vibrant and eclectic mix of art, culture, and entertainment.</p1>
+                <a href="Maboneng.html" class="btn">see more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/image11.jpg" alt="">
+                <h3> Gold Reef City</h3>
+                <p1>This is where the glittering past of Johannesburg comes to life! This iconic destination seamlessly weaves together history, thrills and the entertainment, promising an unforgettable exprience for all.</p1>
+                <a href="GoldReef.html" class="btn">see more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/image12.jpg" alt="">
+                <h3> Constitutional Hill</h3>
+                <p1> Nestled in the heart of Johannesburg, this iconic site stands as a testament to the triumpth of the democracy and the resilience of the human spirit.</p1>
+                <a href="ConstitutionalHill.html" class="btn">see more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/image9.jpg" alt="">
+                <h3> The Apartheid Museum</h3>
+                <p1>The Apartheid Museum in Johannesburg is a world-renowned museum that provides a powerful and immersive experience, documenting the history and impact of apartheid in South Africa.</p1>
+                <a href="ApartheidMuseum.html" class="btn">see more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/image14.jpg" alt="">
+                <h3> Market Theatre</h3>
+                <p1> Situated in the vibrant neighborhood of Newtown, the theatre has been a key player in South Africa's cultural and political history.</p1>
+                <a href="MarketTheatre.html" class="btn">see more</a>
+            </div>
+
+            <div class="box">
+                <img src="images/image17.jpg" alt="">
+                <h3> Sightseeing Tour Bus</h3>
+                <p1>
+                    Discover Johannesburg aboard a hop-on, hop-off sightseeing bus, enjoying panoramic views and insightful commentary. Visit landmarks like Constitution Hill and the Apartheid Museum with flexible ticket options and informative guides. Immerse yourself in the city's history and culture at your own pace.
+                </p1>
+                <a href="Bus.html" class="btn">see more</a>
+            </div>
+        </div>
+
+    </section>
+    <!--Activities section ends-->
+
+    <!--About section starts-->
+    <section class="about" id="about">
+        <h1 class="heading">About Us</h1>
+
+        <div class="column">
+
+            <div class="content">
+                <h3>
+                    Welcome to our vibrant community in the heart of Johannesburg! We are passionate about providing thrilling experiences and showcasing the rich cultural tapestry of this incredible city.
+                </h3>
+                <p>
+                    Join us on a journey of discovery as we bring you the best that Joburg has to offer. Whether you're a local resident or a visitor, there's always something exciting waiting for you here.
+                </p>
+                <p>
+                    Our mission is to offer a diverse range of activities that cater to various interests, from exploring historical landmarks to immersing yourself in the arts and culture of Johannesburg.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--About section ends-->
+    <!--Contact section start-->
+    <section class="contact" id="contact">
+
+        <h1 class="heading">Contact us</h1>
+        <!--These are unreal contact info, because I didnt know what to add on this page-->
+        <div class="details-container1">
+            <div class="details-container">
+            <img src="images/email.png" alt="email-icon" class="icon" />
+            <p><a style="color:saddlebrown" href="mailto:your-email@example.com">jhbTourism@gmail.com</a></p>
+
+        </div>
+
+        <div class="details-container">
+            <img src="images/phone.png" alt="phone-icon" class="icon" />
+            <p>(+27)065-765-6666</p>
+        </div>
+
+        <div class="details-container">
+            <img src="images/pin.png" alt="address-icon" class="icon" />
+            <p>JHB Main str</p>
+        </div>
+    </div>
+    </section>
+    <!--Contact section ends-->
+
+    <!--footer-->
+    <footer class="footer">
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a style="color: saddlebrown" href="#home">Home</a></li>
+
+                    <li><a style="color: saddlebrown" href="#activities">Activities</a></li>
+
+                    <li><a style="color: saddlebrown" href="#about">About</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>copyright &#169; 2024 wendy. All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
